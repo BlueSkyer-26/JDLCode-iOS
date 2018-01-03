@@ -8,24 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		820E41571FFCAA5700953BE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41561FFCAA5700953BE8 /* AppDelegate.m */; };
-		820E415A1FFCAA5700953BE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41591FFCAA5700953BE8 /* ViewController.m */; };
 		820E415D1FFCAA5700953BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820E415B1FFCAA5700953BE8 /* Main.storyboard */; };
 		820E415F1FFCAA5700953BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820E415E1FFCAA5700953BE8 /* Assets.xcassets */; };
 		820E41621FFCAA5700953BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820E41601FFCAA5700953BE8 /* LaunchScreen.storyboard */; };
 		820E41651FFCAA5700953BE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41641FFCAA5700953BE8 /* main.m */; };
+		820E416E1FFCACE100953BE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E416D1FFCACE100953BE8 /* ViewController.m */; };
+		8A35FC1A41D42BFE15A771B9 /* libPods-JDLCode-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		511652BA19EADEAC2CC92FC4 /* Pods-JDLCode-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLCode-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		820E41521FFCAA5700953BE8 /* JDLCode-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JDLCode-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		820E41551FFCAA5700953BE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		820E41561FFCAA5700953BE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		820E41581FFCAA5700953BE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		820E41591FFCAA5700953BE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		820E415C1FFCAA5700953BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		820E415E1FFCAA5700953BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		820E41611FFCAA5700953BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820E41631FFCAA5700953BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820E41641FFCAA5700953BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		820E416B1FFCAAB100953BE8 /* JDLCode-iOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDLCode-iOS.pch"; sourceTree = "<group>"; };
+		820E416C1FFCACE100953BE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		820E416D1FFCACE100953BE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88CA34768BE5E8522819B8DB /* Pods-JDLCode-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLCode-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLCode-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A35FC1A41D42BFE15A771B9 /* libPods-JDLCode-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DDE7A6722053EF34D54B1BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				511652BA19EADEAC2CC92FC4 /* Pods-JDLCode-iOS.debug.xcconfig */,
+				88CA34768BE5E8522819B8DB /* Pods-JDLCode-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		341A5F04C2B448BFEAACE6BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		820E41491FFCAA5700953BE8 = {
 			isa = PBXGroup;
 			children = (
 				820E41541FFCAA5700953BE8 /* JDLCode-iOS */,
 				820E41531FFCAA5700953BE8 /* Products */,
+				1DDE7A6722053EF34D54B1BF /* Pods */,
+				341A5F04C2B448BFEAACE6BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +85,9 @@
 			children = (
 				820E41551FFCAA5700953BE8 /* AppDelegate.h */,
 				820E41561FFCAA5700953BE8 /* AppDelegate.m */,
-				820E41581FFCAA5700953BE8 /* ViewController.h */,
-				820E41591FFCAA5700953BE8 /* ViewController.m */,
+				820E416C1FFCACE100953BE8 /* ViewController.h */,
+				820E416D1FFCACE100953BE8 /* ViewController.m */,
+				820E416B1FFCAAB100953BE8 /* JDLCode-iOS.pch */,
 				820E415B1FFCAA5700953BE8 /* Main.storyboard */,
 				820E415E1FFCAA5700953BE8 /* Assets.xcassets */,
 				820E41601FFCAA5700953BE8 /* LaunchScreen.storyboard */,
@@ -78,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820E41681FFCAA5700953BE8 /* Build configuration list for PBXNativeTarget "JDLCode-iOS" */;
 			buildPhases = (
+				D7ADF61F58479372E0D93570 /* [CP] Check Pods Manifest.lock */,
 				820E414E1FFCAA5700953BE8 /* Sources */,
 				820E414F1FFCAA5700953BE8 /* Frameworks */,
 				820E41501FFCAA5700953BE8 /* Resources */,
+				9B6413F731FFE2E265F2CF5B /* [CP] Embed Pods Frameworks */,
+				7C9B0C9607587E74B30503AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +166,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C9B0C9607587E74B30503AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6413F731FFE2E265F2CF5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7ADF61F58479372E0D93570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		820E414E1FFCAA5700953BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				820E415A1FFCAA5700953BE8 /* ViewController.m in Sources */,
+				820E416E1FFCACE100953BE8 /* ViewController.m in Sources */,
 				820E41651FFCAA5700953BE8 /* main.m in Sources */,
 				820E41571FFCAA5700953BE8 /* AppDelegate.m in Sources */,
 			);
@@ -218,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -276,10 +353,13 @@
 		};
 		820E41691FFCAA5700953BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511652BA19EADEAC2CC92FC4 /* Pods-JDLCode-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EVKP6X2HVB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JDLCode-iOS/JDLCode-iOS.pch";
 				INFOPLIST_FILE = "JDLCode-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "leguan.JDLCode-iOS";
@@ -290,10 +370,13 @@
 		};
 		820E416A1FFCAA5700953BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88CA34768BE5E8522819B8DB /* Pods-JDLCode-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EVKP6X2HVB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JDLCode-iOS/JDLCode-iOS.pch";
 				INFOPLIST_FILE = "JDLCode-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "leguan.JDLCode-iOS";

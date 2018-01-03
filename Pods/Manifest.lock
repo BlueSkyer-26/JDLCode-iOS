@@ -1,0 +1,53 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - JazzHands (2.0.0)
+  - Masonry (0.5.3)
+  - MBProgressHUD (0.9)
+  - RBBAnimation (0.4.0)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - SDCAlertView (2.5.2):
+    - RBBAnimation (~> 0.3)
+    - SDCAutoLayout (~> 2.0)
+  - SDCAutoLayout (2.0.3)
+
+DEPENDENCIES:
+  - BlocksKit (= 2.2.5)
+  - JazzHands (= 2.0.0)
+  - Masonry (= 0.5.3)
+  - MBProgressHUD (= 0.9)
+  - ReactiveCocoa (= 2.3.1)
+  - SDCAlertView (= 2.5.2)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  JazzHands: 00002e9b1284e7fc1ac6555012e81b8942477242
+  Masonry: 9f515466afe48632562342a40a1c224071a1a022
+  MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
+  RBBAnimation: 4b2d66f6d993febce63cd564da934985313b9c59
+  ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
+  SDCAlertView: f9706c18f456ea87909f8f199704cd28e582ff27
+  SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
+
+PODFILE CHECKSUM: 346679565408042cafbc807fc43cacc86c6874dc
+
+COCOAPODS: 1.2.1
