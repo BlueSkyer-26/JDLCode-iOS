@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AppDelegate+JDLAppService.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.layer.cornerRadius = 6;
+    self.window.layer.masksToBounds = YES;
+    self.window.backgroundColor = KWhiteColor;
     
+    [self configureOther];   //统一配置
+    
+    ViewController *vc =[[ViewController alloc] init];
+    UINavigationController *nav =[[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController =nav;
+
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)configureOther{
+    [self setNavBarAppearence];   //统一配置导航栏 状态栏
+    [self adaptationNewIOS];      //适配iOS11
+    [self configureBoardManager]; //键盘弹起收回统一处理
 }
 
 

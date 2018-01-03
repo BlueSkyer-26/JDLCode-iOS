@@ -17,8 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor =[UIColor orangeColor];
+    self.view.backgroundColor =KRANDOM_COLOR;
     // Do any additional setup after loading the view.
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.view.backgroundColor =KRANDOM_COLOR;
 }
 
 - (void)didReceiveMemoryWarning {
