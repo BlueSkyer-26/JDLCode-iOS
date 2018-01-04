@@ -12,7 +12,6 @@
 		820E415F1FFCAA5700953BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820E415E1FFCAA5700953BE8 /* Assets.xcassets */; };
 		820E41621FFCAA5700953BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820E41601FFCAA5700953BE8 /* LaunchScreen.storyboard */; };
 		820E41651FFCAA5700953BE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41641FFCAA5700953BE8 /* main.m */; };
-		820E416E1FFCACE100953BE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E416D1FFCACE100953BE8 /* ViewController.m */; };
 		820E41751FFCB26C00953BE8 /* AppDelegate+JDLAppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41741FFCB26C00953BE8 /* AppDelegate+JDLAppService.m */; };
 		820E417C1FFCB45000953BE8 /* JDLCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E41791FFCB45000953BE8 /* JDLCustomNavigationBar.m */; };
 		820E417D1FFCB45000953BE8 /* JDLNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E417B1FFCB45000953BE8 /* JDLNavigationBar.m */; };
@@ -777,6 +776,8 @@
 		820E47AA1FFCC91400953BE8 /* UIButton+JDLTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47A31FFCC91400953BE8 /* UIButton+JDLTouch.m */; };
 		820E47AB1FFCC91400953BE8 /* JDLAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47A61FFCC91400953BE8 /* JDLAnimationButton.m */; };
 		820E47AF1FFCDC0300953BE8 /* ZJPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */; };
+		820E47B31FFDE03E00953BE8 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47B21FFDE03E00953BE8 /* EllipsePageControl.m */; };
+		820E47B61FFDE4B900953BE8 /* JDLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47B51FFDE4B900953BE8 /* JDLRegisterViewController.m */; };
 		8A35FC1A41D42BFE15A771B9 /* libPods-JDLCode-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -791,8 +792,6 @@
 		820E41631FFCAA5700953BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820E41641FFCAA5700953BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		820E416B1FFCAAB100953BE8 /* JDLCode-iOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JDLCode-iOS.pch"; sourceTree = "<group>"; };
-		820E416C1FFCACE100953BE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		820E416D1FFCACE100953BE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		820E416F1FFCAE9400953BE8 /* JDLCodeCommonSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLCodeCommonSetup.h; sourceTree = "<group>"; };
 		820E41731FFCB26C00953BE8 /* AppDelegate+JDLAppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JDLAppService.h"; sourceTree = "<group>"; };
 		820E41741FFCB26C00953BE8 /* AppDelegate+JDLAppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JDLAppService.m"; sourceTree = "<group>"; };
@@ -1569,6 +1568,10 @@
 		820E47A61FFCC91400953BE8 /* JDLAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLAnimationButton.m; sourceTree = "<group>"; };
 		820E47AD1FFCDC0300953BE8 /* ZJPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPageControl.h; sourceTree = "<group>"; };
 		820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPageControl.m; sourceTree = "<group>"; };
+		820E47B11FFDE03E00953BE8 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
+		820E47B21FFDE03E00953BE8 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
+		820E47B41FFDE4B900953BE8 /* JDLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLRegisterViewController.h; sourceTree = "<group>"; };
+		820E47B51FFDE4B900953BE8 /* JDLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLRegisterViewController.m; sourceTree = "<group>"; };
 		88CA34768BE5E8522819B8DB /* Pods-JDLCode-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLCode-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLCode-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1640,6 +1643,7 @@
 		820E41761FFCB43800953BE8 /* JDLCustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				820E47B01FFDE03E00953BE8 /* EllipsePageControl */,
 				820E47AC1FFCDC0300953BE8 /* ZJPageControl */,
 				820E479A1FFCC91400953BE8 /* UIButton */,
 				820E41771FFCB44F00953BE8 /* JDLNavigation(自定义多样化导航栏) */,
@@ -2810,8 +2814,6 @@
 				820E41561FFCAA5700953BE8 /* AppDelegate.m */,
 				820E41731FFCB26C00953BE8 /* AppDelegate+JDLAppService.h */,
 				820E41741FFCB26C00953BE8 /* AppDelegate+JDLAppService.m */,
-				820E416C1FFCACE100953BE8 /* ViewController.h */,
-				820E416D1FFCACE100953BE8 /* ViewController.m */,
 				820E416F1FFCAE9400953BE8 /* JDLCodeCommonSetup.h */,
 			);
 			path = JDLAppDelegate;
@@ -2831,6 +2833,8 @@
 				820E47981FFCC75500953BE8 /* JDLNewerGuideViewController.m */,
 				820E47941FFCC65E00953BE8 /* JDLLoginViewController.h */,
 				820E47951FFCC65E00953BE8 /* JDLLoginViewController.m */,
+				820E47B41FFDE4B900953BE8 /* JDLRegisterViewController.h */,
+				820E47B51FFDE4B900953BE8 /* JDLRegisterViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -2875,6 +2879,15 @@
 				820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */,
 			);
 			path = ZJPageControl;
+			sourceTree = "<group>";
+		};
+		820E47B01FFDE03E00953BE8 /* EllipsePageControl */ = {
+			isa = PBXGroup;
+			children = (
+				820E47B11FFDE03E00953BE8 /* EllipsePageControl.h */,
+				820E47B21FFDE03E00953BE8 /* EllipsePageControl.m */,
+			);
+			path = EllipsePageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3753,10 +3766,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820E47B31FFDE03E00953BE8 /* EllipsePageControl.m in Sources */,
 				820E47AF1FFCDC0300953BE8 /* ZJPageControl.m in Sources */,
 				820E47991FFCC75500953BE8 /* JDLNewerGuideViewController.m in Sources */,
 				820E47A91FFCC91400953BE8 /* UIButton+JDLLayout.m in Sources */,
-				820E416E1FFCACE100953BE8 /* ViewController.m in Sources */,
+				820E47B61FFDE4B900953BE8 /* JDLRegisterViewController.m in Sources */,
 				820E47A71FFCC91400953BE8 /* UIButton+JDLCountDown.m in Sources */,
 				820E47AA1FFCC91400953BE8 /* UIButton+JDLTouch.m in Sources */,
 				820E47A81FFCC91400953BE8 /* UIButton+JDLImagePosition.m in Sources */,

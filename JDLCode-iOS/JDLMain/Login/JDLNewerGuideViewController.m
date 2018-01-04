@@ -7,7 +7,8 @@
 //
 
 #import "JDLNewerGuideViewController.h"
-
+#import "JDLRegisterViewController.h"
+#import "JDLLoginViewController.h"
 
 @interface JDLNewerGuideViewController ()<UIScrollViewDelegate>
 @property (nonatomic,strong) UIScrollView *scrollview;
@@ -22,7 +23,7 @@
 
 @property (nonatomic,strong) UIImageView *topImageView;
 @property (nonatomic,strong) UIImageView *bottomImageView;
-@property (nonatomic,strong) ZJPageControl *pageControl;
+@property (nonatomic,strong) EllipsePageControl *pageControl;
 
 @property (nonatomic,strong) NSMutableArray *topViewArray;
 @property (nonatomic,strong) NSMutableArray *bottomViewArray;
@@ -33,8 +34,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     [self createView];          //创建视图
     [self createAnimation];     //创建帧动画
@@ -54,43 +53,38 @@
     self.topViewArray =[NSMutableArray array];
     self.bottomViewArray =[NSMutableArray array];
     for (int i=0; i < self.topIconArray.count; i ++) {
-        _topImageView =[[UIImageView alloc] initWithFrame:CGRectMake(KLeftPadding*2 +KScreenWidth*i, KNavbarHeight, KScreenWidth -4*KLeftPadding, topImageViewHeight)];
+        _topImageView =[[UIImageView alloc] initWithFrame:CGRectMake(KLeftPadding*2.5 +KScreenWidth*i, KNavbarHeight, KScreenWidth -5*KLeftPadding, topImageViewHeight)];
         _topImageView.image =KImageName(self.topIconArray[i]);
         _topImageView.contentMode =UIViewContentModeScaleAspectFit;
         [self.scrollview addSubview:_topImageView];
         [self.topViewArray addObject:_topImageView];
         
-        _bottomImageView =[[UIImageView alloc] initWithFrame:CGRectMake(KLeftPadding*2 +KScreenWidth*i, _topImageView.bottom, KScreenWidth -4*KLeftPadding, bottomImageHeight)];
+        _bottomImageView =[[UIImageView alloc] initWithFrame:CGRectMake(KLeftPadding*3 +KScreenWidth*i, _topImageView.bottom, KScreenWidth -6*KLeftPadding, bottomImageHeight)];
         _bottomImageView.image =KImageName(self.bottomIconArray[i]);
         _bottomImageView.contentMode =UIViewContentModeScaleAspectFit;
         [self.scrollview addSubview:_bottomImageView];
         [self.bottomViewArray addObject:_bottomImageView];
     }
     
-    ZJPageControl *pageControl = [[ZJPageControl alloc] initWithFrame:CGRectMake(0, self.registerButton.top -KAdaptY(60), KScreenWidth, KAdaptY(20))];
-    pageControl.backgroundColor =KClearColor;
+    EllipsePageControl *pageControl = [[EllipsePageControl alloc] initWithFrame:CGRectMake(0, self.registerButton.top -KAdaptY(60), KScreenWidth, KAdaptY(20))];
     pageControl.numberOfPages = self.topIconArray.count;
-    pageControl.padding = 10;
-    pageControl.radius = 4;
-    pageControl.lineWidth = 2;
-    pageControl.pageIndicatorTintColor = KBlackAlphaColor(0.14);
-    pageControl.currentPageIndicatorTintColor = KButtonThemeColor;
-//    [pageControl addTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
-    // set current page
-//    pageControl.currentPage = 2;
-    // set current page with animation
-    [pageControl setCurrentPage:0 animated:YES];
+    pageControl.controlSize=8;
+    pageControl.controlSpacing=10;
+    pageControl.currentColor =KButtonThemeColor;
+    pageControl.otherColor =KBlackAlphaColor(0.2);
+    pageControl.enabled =NO;
+//    pageControl.currentBkImg=KImageName(@"intro_tip_0");
     [self.view addSubview:pageControl];
     self.pageControl =pageControl;
 }
 
 -(void)createAnimation{
     
-    IFTTTColorAnimation *backgroundColorAnimation = [IFTTTColorAnimation animationWithView:self.scrollview];
-    [backgroundColorAnimation addKeyframeForTime:-0.5*KScreenWidth color:KVCBackgroundColor];
-    [backgroundColorAnimation addKeyframeForTime:KScreenWidth color:KOrangeColor];
-    [backgroundColorAnimation addKeyframeForTime: 0.5*KScreenWidth color:KVCBackgroundColor];
-    [self.animation addAnimation:backgroundColorAnimation];
+//    IFTTTColorAnimation *backgroundColorAnimation = [IFTTTColorAnimation animationWithView:self.scrollview];
+//    [backgroundColorAnimation addKeyframeForTime:-0.5*KScreenWidth color:KVCBackgroundColor];
+//    [backgroundColorAnimation addKeyframeForTime:KScreenWidth color:KOrangeColor];
+//    [backgroundColorAnimation addKeyframeForTime: 0.5*KScreenWidth color:KVCBackgroundColor];
+//    [self.animation addAnimation:backgroundColorAnimation];
     
     for (int i=0; i < self.topIconArray.count; i ++) {
         UIImageView *topImageView =self.topViewArray[i];
@@ -100,8 +94,14 @@
         [alphaTopAnimation addKeyframeForTime:(i +0.5) *KScreenWidth alpha:0.f];
         [self.animation addAnimation:alphaTopAnimation];
         
-        UIImageView *bottomImageView =self.bottomViewArray[i];
+        //旋转
+//        IFTTTRotationAnimation *rotationTopAnimation =[IFTTTRotationAnimation animationWithView:topImageView];
+//        [rotationTopAnimation addKeyframeForTime:(i -0.5) *KScreenWidth rotation:-100.f];
+//        [rotationTopAnimation addKeyframeForTime:i *KScreenWidth rotation:0.f];
+//        [rotationTopAnimation addKeyframeForTime:(i +0.5) *KScreenWidth rotation:100.f];
+//        [self.animation addAnimation:rotationTopAnimation];
         
+        UIImageView *bottomImageView =self.bottomViewArray[i];
         IFTTTScaleAnimation *scaleBottomAnimation =[IFTTTScaleAnimation animationWithView:bottomImageView];
         [scaleBottomAnimation addKeyframeForTime:(i -0.5) *KScreenWidth scale:0.5f];
         [scaleBottomAnimation addKeyframeForTime:i *KScreenWidth scale:1.f];
@@ -131,7 +131,7 @@
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     CGFloat offsetX =scrollView.contentOffset.x;
     NSInteger nearestPage = offsetX/KScreenWidth;
-    [self.pageControl setCurrentPage:nearestPage animated:YES];
+    self.pageControl.currentPage =nearestPage;
 }
 
 -(UIScrollView *)scrollview{
@@ -157,9 +157,13 @@
 
 -(JDLAnimationButton *)registerButton{
     
+    WEAKSELF;
     if (!_registerButton) {
         _registerButton =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(0, 0, KScreenWidth *0.38, KAdaptY(40)) title:@"注册" titleColor:KWhiteColor backgroundColor:KButtonThemeColor imageName:nil andBlock:^{
             
+            JDLRegisterViewController *vc = [[JDLRegisterViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            [weakSelf presentViewController:nav animated:YES completion:nil];
         }];
         _registerButton.center =CGPointMake(KScreenWidth*0.27, KScreenHeight -KAdaptY(50));
         [_registerButton JDL_setCornerRadiusFlout:KAdaptY(20)];
@@ -169,9 +173,13 @@
 
 -(JDLAnimationButton *)loginButton{
     
+    WEAKSELF;
     if (!_loginButton) {
         _loginButton =[JDLAnimationButton buttonWithType:UIButtonTypeCustom frame:CGRectMake(0, 0, KScreenWidth *0.38, KAdaptY(40)) title:@"登录" titleColor:KButtonThemeColor backgroundColor:KVCBackgroundColor imageName:nil andBlock:^{
             
+            JDLLoginViewController *vc = [[JDLLoginViewController alloc] init];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            [weakSelf presentViewController:nav animated:YES completion:nil];
         }];
         _loginButton.center =CGPointMake(KScreenWidth*0.73, KScreenHeight -KAdaptY(50));
         [_loginButton JDL_setCornerRadiusFlout:KAdaptY(20)];

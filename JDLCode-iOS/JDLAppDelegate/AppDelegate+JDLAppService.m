@@ -14,15 +14,15 @@
 - (void)setNavBarAppearence
 {
     // 设置导航栏默认的背景颜色
-    [JDLNavigationBar JDL_setDefaultNavBarBarTintColor:KThemeColor];
+    [JDLNavigationBar JDL_setDefaultNavBarBarTintColor:KVCBackgroundColor];
     // 设置导航栏所有按钮的默认颜色
-    [JDLNavigationBar JDL_setDefaultNavBarTintColor:KWhiteColor];
+    [JDLNavigationBar JDL_setDefaultNavBarTintColor:KGrayColor];
     // 设置导航栏标题默认颜色
-    [JDLNavigationBar JDL_setDefaultNavBarTitleColor:KWhiteColor];
+    [JDLNavigationBar JDL_setDefaultNavBarTitleColor:KGrayColor];
     // 统一设置状态栏样式
     [JDLNavigationBar JDL_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
     // 如果需要设置导航栏底部分割线隐藏，可以在这里统一设置
-    [JDLNavigationBar JDL_setDefaultNavBarShadowImageHidden:YES];
+    [JDLNavigationBar JDL_setDefaultNavBarShadowImageHidden:NO];
 }
 
 #pragma mark ------- 适配iOS11 -------

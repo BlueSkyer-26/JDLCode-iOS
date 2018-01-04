@@ -1,27 +1,27 @@
 //
-//  ViewController.m
+//  JDLRegisterViewController.m
 //  JDLCode-iOS
 //
-//  Created by 胜炫电子 on 2018/1/3.
+//  Created by 胜炫电子 on 2018/1/4.
 //  Copyright © 2018年 BlueSkyer-25. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "JDLRegisterViewController.h"
 
-@interface ViewController ()
+@interface JDLRegisterViewController ()
 
 @end
 
-@implementation ViewController
+@implementation JDLRegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor =KRANDOM_COLOR;
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor =KOrangeColor;
+    [self JDL_setStatusBarStyle:UIStatusBarStyleDefault];
 }
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.view.backgroundColor =KRANDOM_COLOR;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
