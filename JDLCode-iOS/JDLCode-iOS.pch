@@ -13,16 +13,22 @@
 #import "JDLCodeCommonSetup.h"
 
 #pragma mark ------ Custom -------
+#import "ZJPageControl.h"
+#import "JDLAnimationButton.h"
 #import "JDLNavigationBar.h"                    //导航渐变 颜色 状态栏
 #import "JDLCustomNavigationBar.h"              //自定义导航渐变 颜色 状态栏
 
+#pragma mark ------ Category -------
+#import "UIButton+JDLImagePosition.h"
+
 #pragma mark ------ Third -------
-//#import <YYKit.h>
+#import <YYKit.h>
 //#import <Masonry.h>
 //#import <MJRefresh.h>
 //#import <MJExtension.h>
 //#import <YBPopupMenu.h>
 //#import <ReactiveCocoa.h>
+#import <IFTTTJazzHands.h>
 #import <IQKeyboardManager.h>
 
 

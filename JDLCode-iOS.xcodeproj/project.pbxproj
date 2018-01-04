@@ -769,6 +769,14 @@
 		820E478E1FFCC23700953BE8 /* bubble_right_play_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 820E449D1FFCC23500953BE8 /* bubble_right_play_2@2x.png */; };
 		820E478F1FFCC23700953BE8 /* button_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 820E449E1FFCC23500953BE8 /* button_close@2x.png */; };
 		820E47901FFCC23700953BE8 /* PR_plus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 820E449F1FFCC23600953BE8 /* PR_plus@3x.png */; };
+		820E47961FFCC65E00953BE8 /* JDLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47951FFCC65E00953BE8 /* JDLLoginViewController.m */; };
+		820E47991FFCC75500953BE8 /* JDLNewerGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47981FFCC75500953BE8 /* JDLNewerGuideViewController.m */; };
+		820E47A71FFCC91400953BE8 /* UIButton+JDLCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E479D1FFCC91400953BE8 /* UIButton+JDLCountDown.m */; };
+		820E47A81FFCC91400953BE8 /* UIButton+JDLImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E479F1FFCC91400953BE8 /* UIButton+JDLImagePosition.m */; };
+		820E47A91FFCC91400953BE8 /* UIButton+JDLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47A11FFCC91400953BE8 /* UIButton+JDLLayout.m */; };
+		820E47AA1FFCC91400953BE8 /* UIButton+JDLTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47A31FFCC91400953BE8 /* UIButton+JDLTouch.m */; };
+		820E47AB1FFCC91400953BE8 /* JDLAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47A61FFCC91400953BE8 /* JDLAnimationButton.m */; };
+		820E47AF1FFCDC0300953BE8 /* ZJPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */; };
 		8A35FC1A41D42BFE15A771B9 /* libPods-JDLCode-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -1545,6 +1553,22 @@
 		820E449D1FFCC23500953BE8 /* bubble_right_play_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble_right_play_2@2x.png"; sourceTree = "<group>"; };
 		820E449E1FFCC23500953BE8 /* button_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_close@2x.png"; sourceTree = "<group>"; };
 		820E449F1FFCC23600953BE8 /* PR_plus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PR_plus@3x.png"; sourceTree = "<group>"; };
+		820E47941FFCC65E00953BE8 /* JDLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLLoginViewController.h; sourceTree = "<group>"; };
+		820E47951FFCC65E00953BE8 /* JDLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLLoginViewController.m; sourceTree = "<group>"; };
+		820E47971FFCC75500953BE8 /* JDLNewerGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDLNewerGuideViewController.h; sourceTree = "<group>"; };
+		820E47981FFCC75500953BE8 /* JDLNewerGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDLNewerGuideViewController.m; sourceTree = "<group>"; };
+		820E479C1FFCC91400953BE8 /* UIButton+JDLCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLCountDown.h"; sourceTree = "<group>"; };
+		820E479D1FFCC91400953BE8 /* UIButton+JDLCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLCountDown.m"; sourceTree = "<group>"; };
+		820E479E1FFCC91400953BE8 /* UIButton+JDLImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLImagePosition.h"; sourceTree = "<group>"; };
+		820E479F1FFCC91400953BE8 /* UIButton+JDLImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLImagePosition.m"; sourceTree = "<group>"; };
+		820E47A01FFCC91400953BE8 /* UIButton+JDLLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLLayout.h"; sourceTree = "<group>"; };
+		820E47A11FFCC91400953BE8 /* UIButton+JDLLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLLayout.m"; sourceTree = "<group>"; };
+		820E47A21FFCC91400953BE8 /* UIButton+JDLTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JDLTouch.h"; sourceTree = "<group>"; };
+		820E47A31FFCC91400953BE8 /* UIButton+JDLTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JDLTouch.m"; sourceTree = "<group>"; };
+		820E47A51FFCC91400953BE8 /* JDLAnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLAnimationButton.h; sourceTree = "<group>"; };
+		820E47A61FFCC91400953BE8 /* JDLAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLAnimationButton.m; sourceTree = "<group>"; };
+		820E47AD1FFCDC0300953BE8 /* ZJPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPageControl.h; sourceTree = "<group>"; };
+		820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPageControl.m; sourceTree = "<group>"; };
 		88CA34768BE5E8522819B8DB /* Pods-JDLCode-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDLCode-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDLCode-iOS/Pods-JDLCode-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BA31D59FDABD42253E6B5486 /* libPods-JDLCode-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDLCode-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1599,19 +1623,13 @@
 		820E41541FFCAA5700953BE8 /* JDLCode-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				820E41551FFCAA5700953BE8 /* AppDelegate.h */,
-				820E41561FFCAA5700953BE8 /* AppDelegate.m */,
-				820E41731FFCB26C00953BE8 /* AppDelegate+JDLAppService.h */,
-				820E41741FFCB26C00953BE8 /* AppDelegate+JDLAppService.m */,
-				820E416C1FFCACE100953BE8 /* ViewController.h */,
-				820E416D1FFCACE100953BE8 /* ViewController.m */,
+				820E47911FFCC4DF00953BE8 /* JDLAppDelegate */,
+				820E417E1FFCB83C00953BE8 /* JDLMain */,
+				820E41761FFCB43800953BE8 /* JDLCustomTools */,
+				820E417F1FFCC1F700953BE8 /* JDLImages */,
 				820E416B1FFCAAB100953BE8 /* JDLCode-iOS.pch */,
 				820E415E1FFCAA5700953BE8 /* Assets.xcassets */,
 				820E41631FFCAA5700953BE8 /* Info.plist */,
-				820E416F1FFCAE9400953BE8 /* JDLCodeCommonSetup.h */,
-				820E417F1FFCC1F700953BE8 /* JDLImages */,
-				820E417E1FFCB83C00953BE8 /* JDLMain */,
-				820E41761FFCB43800953BE8 /* JDLCustomTools */,
 				820E415B1FFCAA5700953BE8 /* Main.storyboard */,
 				820E41601FFCAA5700953BE8 /* LaunchScreen.storyboard */,
 				820E41641FFCAA5700953BE8 /* main.m */,
@@ -1622,6 +1640,8 @@
 		820E41761FFCB43800953BE8 /* JDLCustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				820E47AC1FFCDC0300953BE8 /* ZJPageControl */,
+				820E479A1FFCC91400953BE8 /* UIButton */,
 				820E41771FFCB44F00953BE8 /* JDLNavigation(自定义多样化导航栏) */,
 			);
 			path = JDLCustomTools;
@@ -1641,6 +1661,8 @@
 		820E417E1FFCB83C00953BE8 /* JDLMain */ = {
 			isa = PBXGroup;
 			children = (
+				820E47931FFCC5BC00953BE8 /* Login */,
+				820E47921FFCC57E00953BE8 /* RootControllers */,
 			);
 			path = JDLMain;
 			sourceTree = "<group>";
@@ -2781,6 +2803,80 @@
 			path = bubble;
 			sourceTree = "<group>";
 		};
+		820E47911FFCC4DF00953BE8 /* JDLAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				820E41551FFCAA5700953BE8 /* AppDelegate.h */,
+				820E41561FFCAA5700953BE8 /* AppDelegate.m */,
+				820E41731FFCB26C00953BE8 /* AppDelegate+JDLAppService.h */,
+				820E41741FFCB26C00953BE8 /* AppDelegate+JDLAppService.m */,
+				820E416C1FFCACE100953BE8 /* ViewController.h */,
+				820E416D1FFCACE100953BE8 /* ViewController.m */,
+				820E416F1FFCAE9400953BE8 /* JDLCodeCommonSetup.h */,
+			);
+			path = JDLAppDelegate;
+			sourceTree = "<group>";
+		};
+		820E47921FFCC57E00953BE8 /* RootControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootControllers;
+			sourceTree = "<group>";
+		};
+		820E47931FFCC5BC00953BE8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				820E47971FFCC75500953BE8 /* JDLNewerGuideViewController.h */,
+				820E47981FFCC75500953BE8 /* JDLNewerGuideViewController.m */,
+				820E47941FFCC65E00953BE8 /* JDLLoginViewController.h */,
+				820E47951FFCC65E00953BE8 /* JDLLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		820E479A1FFCC91400953BE8 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				820E47A41FFCC91400953BE8 /* ButtonInherit(继承) */,
+				820E479B1FFCC91400953BE8 /* ButtonCategory(类别) */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		820E479B1FFCC91400953BE8 /* ButtonCategory(类别) */ = {
+			isa = PBXGroup;
+			children = (
+				820E479C1FFCC91400953BE8 /* UIButton+JDLCountDown.h */,
+				820E479D1FFCC91400953BE8 /* UIButton+JDLCountDown.m */,
+				820E479E1FFCC91400953BE8 /* UIButton+JDLImagePosition.h */,
+				820E479F1FFCC91400953BE8 /* UIButton+JDLImagePosition.m */,
+				820E47A01FFCC91400953BE8 /* UIButton+JDLLayout.h */,
+				820E47A11FFCC91400953BE8 /* UIButton+JDLLayout.m */,
+				820E47A21FFCC91400953BE8 /* UIButton+JDLTouch.h */,
+				820E47A31FFCC91400953BE8 /* UIButton+JDLTouch.m */,
+			);
+			path = "ButtonCategory(类别)";
+			sourceTree = "<group>";
+		};
+		820E47A41FFCC91400953BE8 /* ButtonInherit(继承) */ = {
+			isa = PBXGroup;
+			children = (
+				820E47A51FFCC91400953BE8 /* JDLAnimationButton.h */,
+				820E47A61FFCC91400953BE8 /* JDLAnimationButton.m */,
+			);
+			path = "ButtonInherit(继承)";
+			sourceTree = "<group>";
+		};
+		820E47AC1FFCDC0300953BE8 /* ZJPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				820E47AD1FFCDC0300953BE8 /* ZJPageControl.h */,
+				820E47AE1FFCDC0300953BE8 /* ZJPageControl.m */,
+			);
+			path = ZJPageControl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2810,6 +2906,7 @@
 		820E414A1FFCAA5700953BE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDL;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "BlueSkyer-25";
 				TargetAttributes = {
@@ -3656,8 +3753,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820E47AF1FFCDC0300953BE8 /* ZJPageControl.m in Sources */,
+				820E47991FFCC75500953BE8 /* JDLNewerGuideViewController.m in Sources */,
+				820E47A91FFCC91400953BE8 /* UIButton+JDLLayout.m in Sources */,
 				820E416E1FFCACE100953BE8 /* ViewController.m in Sources */,
+				820E47A71FFCC91400953BE8 /* UIButton+JDLCountDown.m in Sources */,
+				820E47AA1FFCC91400953BE8 /* UIButton+JDLTouch.m in Sources */,
+				820E47A81FFCC91400953BE8 /* UIButton+JDLImagePosition.m in Sources */,
+				820E47961FFCC65E00953BE8 /* JDLLoginViewController.m in Sources */,
 				820E41751FFCB26C00953BE8 /* AppDelegate+JDLAppService.m in Sources */,
+				820E47AB1FFCC91400953BE8 /* JDLAnimationButton.m in Sources */,
 				820E417D1FFCB45000953BE8 /* JDLNavigationBar.m in Sources */,
 				820E41651FFCAA5700953BE8 /* main.m in Sources */,
 				820E417C1FFCB45000953BE8 /* JDLCustomNavigationBar.m in Sources */,

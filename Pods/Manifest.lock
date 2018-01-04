@@ -30,6 +30,9 @@ PODS:
     - RBBAnimation (~> 0.3)
     - SDCAutoLayout (~> 2.0)
   - SDCAutoLayout (2.0.3)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - BlocksKit (= 2.2.5)
@@ -39,6 +42,7 @@ DEPENDENCIES:
   - MBProgressHUD (= 0.9)
   - ReactiveCocoa (= 2.3.1)
   - SDCAlertView (= 2.5.2)
+  - YYKit (= 1.0.9)
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
@@ -50,7 +54,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
   SDCAlertView: f9706c18f456ea87909f8f199704cd28e582ff27
   SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 969cb4b4147f4f0f860e7fceb38899c375acee2b
+PODFILE CHECKSUM: 116168619506b143519a85508df16759f7e9a6b5
 
 COCOAPODS: 1.2.1

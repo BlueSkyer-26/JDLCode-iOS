@@ -7,4 +7,5 @@ pod 'Masonry', '0.5.3'
 pod 'SDCAlertView', '2.5.2'
 pod 'JazzHands', '2.0.0'
 pod 'IQKeyboardManager', '~> 3.3.7'
+pod 'YYKit','1.0.9'
 end
